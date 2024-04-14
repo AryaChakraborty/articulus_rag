@@ -22,14 +22,3 @@ def keyword_from_search_sentence(text) :
         return list_of_keywords[:10]
     else :
         return text
-    
-# Example usage
-# text = """Python, created by Guido van Rossum and first released in 1991, is a high-level, 
-#     interpreted programming language known for its readability and simplicity. 
-#     It was designed to be highly readable and to emphasize code readability, 
-#     making it a popular choice for beginners and experienced developers alike. 
-#     Python's development was influenced by a variety of languages, including ABC, 
-#     Modula-3, C, C++, and others. Over the years, Python has undergone several major releases, 
-#     with the latest stable version being Python 3. Python 2, which was first released in 2000, 
-#     reached its end of life in 2020, prompting developers to transition to Python 3."""
-# keywords = keyword_from_search_sentence(text)

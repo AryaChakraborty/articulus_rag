@@ -21,10 +21,15 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 client = pym.MongoClient(MONGO_URL)
 db = client["newsgpt"]
 blog_collection = db["articles"]
+user_collection = db["users"]
 
 # define the app
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the NewsGPT API!"
 
 @app.route('/recommend', methods=['GET'])
 def recommend_endpoint():
@@ -34,9 +39,15 @@ def recommend_endpoint():
     try:
         # identifiers for the database and the collection
         documents = list(blog_collection.find({}))
+        users = list(user_collection.find({}))
         search_keywords = []
-        ranked_documents = rank_documents(search_keywords, documents, search_filter=False)
-        return jsonify({"ranked_documents": ranked_documents})
+        # displaying all documents while sorting based on the search keywords.
+        ranked_documents = rank_documents(search_keywords=search_keywords,
+                                          documents=documents,
+                                          users=users, 
+                                          search_filter=False)
+        ranked_list = [{'article title': doc[0], 'article user': doc[1], 'article slug': doc[2]} for doc in ranked_documents]
+        return jsonify({"ranked_documents": ranked_list})
     except Exception as e:
         logging.error(f"Error in /recommend endpoint: {e}")
         return jsonify({"error": str(e)})
@@ -49,10 +60,15 @@ def rank_endpoint():
     try:
         data = request.json
         documents = list(blog_collection.find({}))
+        users = list(user_collection.find({}))
         search_keywords = data.get('search_keywords')
         # displaying all documents while sorting based on the search keywords.
-        ranked_documents = rank_documents(search_keywords, documents, search_filter=True)
-        return jsonify({"ranked_documents": ranked_documents})
+        ranked_documents = rank_documents(search_keywords=search_keywords,
+                                          documents=documents,
+                                          users=users, 
+                                          search_filter=True)
+        ranked_list = [{'article title': doc[0], 'article user': doc[1], 'article slug': doc[2]} for doc in ranked_documents]
+        return jsonify({"ranked_documents": ranked_list})
     except Exception as e:
         logging.error(f"Error in /rank endpoint: {e}")
         return jsonify({"error": str(e)})
