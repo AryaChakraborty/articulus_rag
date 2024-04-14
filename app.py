@@ -2,14 +2,16 @@ import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from enterprise_rag import source,retrieve,embeddings,llms,generator
-from utils import keyword_from_search_sentence, rank_documents
+from utils.keywordExtractor import keyword_from_search_sentence
+from utils.rankBlogs import rank_documents
 from dotenv import load_dotenv # type: ignore
 import pymongo as pym
 load_dotenv()
 import os
 
-# configure logging
-logging.basicConfig(level=logging.INFO)
+# configure logging and save the logs in a file within the logs directory
+logging.basicConfig(filename='logs/app.log', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
 
 # get all the env variables
 MONGO_URL = os.getenv("MONGO_URL")
@@ -76,7 +78,7 @@ def ai_endpoint():
     '''
     try:
         data_post = request.json
-        path = data_post.get('path') # https://highonbugs.sbk2k1.in/blog1
+        path = data_post.get('path') # https://highonbugs.sbk2k1.in/sows
         dtype = data_post.get('type') # "url", "youtube", etc.
         question = data_post.get('question') # What is the best way to learn python?
 
