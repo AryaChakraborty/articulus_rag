@@ -2,26 +2,20 @@
 <h1 align="center">Enterprise-RAG</h1>
 <h2 align="center">Build - Quick Experiment - Evaluate - Repeat</h2>
 
-<a href="https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10-3776AB.svg?style=flat&logo=python&logoColor=white"><img src="https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10-3776AB.svg?style=flat&logo=python&logoColor=white" alt="Python Versions"></a>
-<a href="https://discord.gg/4aWV7He2QU"><img src="https://dcbadge.vercel.app/api/server/4aWV7He2QU?style=flat" alt="Discord" /></a>
-<a href="https://twitter.com/aiplanethub"><img src="https://img.shields.io/twitter/follow/aiplanethub" alt="Twitter" /></a>
-<!-- <a href="https://colab.research.google.com/drive/1y6_0MoNWjS9wugv0askP1Jb7zrY_sQT-?usp=sharing"><img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Colab" /></a> -->
+<a href="https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10-3776AB.svg?style=flat&logo=python&logoColor=white"><img src="https://img.shields.io/badge/Python-3.11-3776AB.svg?style=flat&logo=python&logoColor=white" alt="Python Versions"></a>
+<a href="https://twitter.com/ChakrabortyAry1"><img src="https://img.shields.io/twitter/follow/Arya" alt="Twitter" /></a>
+<a href="https://twitter.com/sbk_2k1"><img src="https://img.shields.io/twitter/follow/Saptarshi" alt="Twitter" /></a>
 
-<p>Enterprise RAG offers an all-in-one toolkit for experimentation, evaluation, and deployment of Retrieval-Augmented Generation (RAG) systems, simplifying the process with automated integration, customizable evaluation metrics, and support for various Large Language Models (LLMs) tailored to specific needs, ultimately aiming to reduce LLM hallucination risks and enhance reliability.</p>
-<i><a href="https://discord.gg/4aWV7He2QU">👉 Join our Discord community!</a></i>
+<p>A platform for empowering transparency in media leverages AI-driven chatbots and content from journalism students to provide credible insights on global affairs, addressing gaps in Indian journalism. Inspired by my struggle to find concise information on India's stance on the Russia-Ukraine conflict during an interview preparation, and concerns about biased media coverage in regions like Manipur and Ladakh, the project aims to promote factual reporting and informed discourse. By offering accurate responses to complex queries and fostering a culture of fact-based reporting, it seeks to mitigate the prevalence of biased or incomplete information in Indian media, promoting transparency, accountability, and knowledge dissemination in the digital age.</p>
+
 </div>
-
-Try out a quick demo on Google Colab:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dJZF5113e5XQsm6GxuW3ShYCBZcUs3-_?usp=sharing)
 
 ## Quick install
 
-To install Enterprise RAG i.e., a private repo, we can use Access Token of GitHub. 
+To install Articulus RAG i.e., a private repo, we can use Access Token of GitHub. 
 
 ```bash
-git clone https://<UPDATE-WITH-YOUR-TOKEN>@github.com/aiplanethub/enterprise-rag.git
-cd enterprise-rag
+git clone https://<UPDATE-WITH-YOUR-TOKEN>@https://github.com/AryaChakraborty/rebase_ml
 ```
 
 Create virtual environment
@@ -42,90 +36,77 @@ Install all the packages within the virtual environment.
 pip install -r requirements.txt
 ```
 
-Install on Google Colab
+### API Documentation
 
-```bash
-!git clone https://<UPDATE-WITH-YOUR-TOKEN>@github.com/aiplanethub/enterprise-rag.git
+#### /recommend Endpoint
+- **Method:** GET
+- **Description:** Retrieves ranked documents from the MongoDB collection.
+- **Parameters:** None
+- **Response:**
+  - Success: Returns a JSON object containing the ranked documents.
+  - Error: Returns a JSON object with an error message.
 
-!pip install -r requirements.txt
+#### /rank Endpoint
+- **Method:** POST
+- **Description:** Retrieves ranked documents based on search keywords.
+- **Parameters:**
+  - search_keywords: List of search keywords.
+- **Request Body Example:**
+  ```json
+  {
+    "search_keywords": ["keyword1", "keyword2", "keyword3"]
+  }
+  ```
+- **Response:**
+  - Success: Returns a JSON object containing the ranked documents.
+  - Error: Returns a JSON object with an error message.
 
-%cd /content/enterprise_rag/
+#### /keyword_extractor Endpoint
+- **Method:** POST
+- **Description:** Extracts top 10 keywords from the given text.
+- **Parameters:**
+  - text: Input text from which keywords need to be extracted.
+- **Request Body Example:**
+  ```json
+  {
+    "text": "Input text for keyword extraction."
+  }
+  ```
+- **Response:**
+  - Success: Returns a JSON object containing the extracted keywords.
+  - Error: Returns a JSON object with an error message.
 
-!ls
-```
-
-## Quickstart Guide- Chat with YouTube Video
-
-In this quick start guide, we'll demonstrate how to create a Chat with YouTube video RAG application using Enterprise RAG with less than 8 lines of code. This 8 lines of code includes:
-* Getting custom data source
-* Retrieving documents
-* Generating LLM responses
-* Evaluating embeddings
-* Evaluating LLM responses
-
-### Approach-1: Using Default LLM and Embeddings
-
-Build customised RAG in less than ``5 lines of code`` using Enterprise RAG. 
-
-```python
-from enterprise_rag import source,retrieve,generator
-import os
-os.environ['GOOGLE_API_KEY'] = "Your Google API Key:"
-
-data = source.fit("https://www.youtube.com/watch?v=oJJyTztI_6g",dtype="youtube",chunk_size=512,chunk_overlap=50)
-retriever = retrieve.auto_retriever(data,type="normal",top_k=3)
-pipeline = generator.Generate(question="what tool is video mentioning about?",retriever=retriever)
-
-print(pipeline.call())
-```
-
-### Approach-2: With Custom LLM and Embeddings
-
-Enterprise RAG support various Embeddings and LLMs that are two very important components in Retrieval Augmented Generation. 
-
-```python
-from enterprise_rag import source,retrieve,embeddings,llms,generator
-import os
-from getpass import getpass
-os.environ['OPENAI_API_KEY'] = getpass("Your OpenAI API Key:")
-
-data = source.fit("https://www.youtube.com/watch?v=oJJyTztI_6g",dtype="youtube",chunk_size=1024,chunk_overlap=0)
-embed_model = embeddings.OpenAIEmbeddings()
-retriever = retrieve.auto_retriever(data,embed_model,type="normal",top_k=4)
-llm = llms.ChatOpenAIModel()
-pipeline = generator.Generate(question="what tool is video mentioning about?",retriever=retriever,llm=llm)
-
-print(pipeline.call()) #AI response
-print(retriever.evaluate(llm=llm)) #evaluate embeddings
-print(pipeline.get_rag_triad_evals()) #evaluate LLM response
-```
+#### /ai Endpoint
+- **Method:** POST
+- **Description:** Uses the enterprise RAG model to provide a response to the given question.
+- **Parameters:**
+  - path: URL path or source of the content.
+  - type: Type of content (e.g., "url", "youtube", etc.).
+  - question: Question to be answered.
+- **Request Body Example:**
+  ```json
+  {
+    "path": "https://highonbugs.sbk2k1.in/sows",
+    "type": "url",
+    "question": "What is the blog talking about?"
+  }
+  ```
+- **Response:**
+  - Success: Returns a JSON object containing the response from the enterprise RAG model.
+  - Error: Returns a JSON object with an error message.
 
 ##### Output
 
 ```bash
-The tool mentioned in the context is called Jupiter, which is an AI Guru designed to simplify the learning of complex data science topics. Users can access Jupiter by logging into AI Planet, accessing any course for free, and then requesting explanations of topics from Jupiter in various styles, such as in the form of a movie plot. Jupiter aims to make AI education more accessible and interactive for everyone.
-
-Hit_rate:1.0
-MRR:1.0
-
-Context relevancy Score: 8.0
-Answer relevancy Score: 7.0
-Groundness score: 7.666666666666667
+{
+  "response": "The blog is talking about a software that lets you play Counter-Strike using a guitar. The software is built using Python Object-Oriented Programming (OOP) and PyQt5 and PySide for the desktop application. It uses audio processing to map guitar notes to in-game actions. The blog also includes some practical applications and creative possibilities for the software."
+}
 ```
-
-## Get in Touch
-
-You can schedule a 1:1 meeting with our DevRel & Community Team to get started with AI Planet Open Source LLMs(effi and Panda Coder) and Enterprise RAG. Schedule the call here: [https://calendly.com/jaintarun](https://calendly.com/jaintarun)
-
-## Contribution guidelines
-
-Enterprise RAG thrives in the rapidly evolving landscape of open-source projects. We wholeheartedly welcome contributions in various capacities, be it through innovative features, enhanced infrastructure, or refined documentation.
 
 ## Acknowledgements
 
 * [HuggingFace](https://github.com/huggingface)
 * [LlamaIndex](https://github.com/jerryjliu/llama_index)
-* [OpenAI](https://github.com/openai)
 * [Google Gemini](https://ai.google.dev/)
   
 and the entire OpenSource community.
