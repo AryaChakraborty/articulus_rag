@@ -1,0 +1,166 @@
+2024-04-14 21:23:49,094 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 21:23:49,094 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-14 21:23:49,096 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:23:54,078 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 21:23:54,089 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 21:23:54,359 - root - ERROR - Error in /rank endpoint: 'nirf'
+2024-04-14 21:23:54,360 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:23:54] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:24:35,820 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 21:24:35,821 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-14 21:24:35,823 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:24:40,837 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 21:24:40,848 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 21:24:41,386 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:24:41] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:24:49,033 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:24:49] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:25:09,724 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:25:09] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:25:17,154 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:25:17] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:25:22,156 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:25:22] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:25:30,812 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:25:30] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:25:38,843 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:25:38] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:29:05,158 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:29:05] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:29:05,160 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:29:05] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:29:05,486 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:29:05] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:29:05,854 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:29:05] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:32:25,490 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:25] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:32:25,586 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:25] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:32:25,808 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:25] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:32:25,869 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:25] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:32:25,962 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:25] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:32:26,024 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:32:26] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:34:58,591 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:34:58] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:34:58,922 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:34:58] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:36:41,974 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:36:41] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:36:42,345 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:36:42] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:37:02,658 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:37:02] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:37:03,026 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:37:03] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:38:35,422 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:38:35] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:38:35,748 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:38:35] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:39:24,984 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:39:24] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:39:25,360 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:39:25] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:39:48,864 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:39:48] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:39:49,235 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:39:49] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:40:32,539 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:40:32] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:40:32,911 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:40:32] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:40:45,159 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:40:45] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:40:45,585 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:40:45] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:41:33,343 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:41:33] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:41:33,712 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:41:33] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:41:48,640 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:41:48] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:41:49,007 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:41:49] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:52:55,886 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:52:55] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:52:56,209 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:52:56] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:56:06,530 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:06] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:56:06,856 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:06] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:56:19,060 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:19] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:56:19,486 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:19] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:56:34,823 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:34] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:56:35,200 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:35] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:56:46,146 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:46] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:56:46,517 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:56:46] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:02,307 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:02] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:02,676 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:02] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:09,973 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:09] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:10,347 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:10] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:15,498 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:15] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:15,873 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:15] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:22,021 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:22] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:22,395 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:22] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:24,074 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:24] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:27,484 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:27] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:27,808 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:27] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:31,656 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:31] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:34,060 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:34] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:57:34,364 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:34] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:36,376 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:36] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:57:38,092 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:57:38] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:58:02,626 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:58:02] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:58:03,002 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:58:03] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:58:10,010 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:58:10] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 21:58:10,384 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:58:10] "POST /rank HTTP/1.1" 200 -
+2024-04-14 21:58:48,985 - werkzeug - INFO -  * Detected change in 'E:\\Projects\\rebase_ml\\utils\\rankBlogs.py', reloading
+2024-04-14 21:58:49,837 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:58:55,097 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 21:58:55,108 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 21:59:00,559 - werkzeug - INFO -  * Detected change in 'E:\\Projects\\rebase_ml\\utils\\rankBlogs.py', reloading
+2024-04-14 21:59:01,490 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:59:10,594 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 21:59:10,594 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-14 21:59:10,598 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:59:15,154 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 21:59:15,165 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 21:59:46,425 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 21:59:46,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-14 21:59:46,428 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 21:59:52,076 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 21:59:52,090 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 21:59:53,438 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 21:59:53] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:03:51,858 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:03:51] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:03:52,175 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:03:52] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:05:03,649 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:03] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:05:03,972 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:03] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:05:15,629 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:15] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:05:16,001 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:16] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:05:22,311 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:22] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:05:22,677 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:22] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:05:30,200 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:30] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:05:30,575 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:05:30] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:06:00,793 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:00] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:06:01,219 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:01] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:06:30,458 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:30] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:06:30,832 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:30] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:06:41,098 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:41] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:06:41,474 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:06:41] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:09:12,262 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:09:12] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:09:12,577 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:09:12] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:09:21,642 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:09:21] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:09:22,021 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:09:22] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:15:00,152 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:15:00] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:15:00,462 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:15:00] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:19:21,000 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:19:21] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:20:24,187 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:20:24] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:21:55,994 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:21:55] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:24:00,149 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:24:00] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:24:56,368 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:24:56] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:26:12,974 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:26:12] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:27:03,734 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:27:03] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:28:40,634 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:28:40] "POST /keyword_extractor HTTP/1.1" 200 -
+2024-04-14 22:28:54,138 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:28:54] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:28:54,493 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:28:54] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:29:03,515 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:29:03] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:29:03,923 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:29:03] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:29:08,912 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:29:08] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:29:09,308 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:29:09] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:30:57,522 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:30:57] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:30:57,875 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:30:57] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:31:10,961 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:10] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:31:11,376 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:11] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:31:17,064 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:17] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:31:17,474 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:17] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:31:54,535 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:54] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:31:58,800 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:31:58] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:32:02,714 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:32:02] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:33:59,070 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:33:59] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:33:59,433 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:33:59] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:33:59,611 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:33:59] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:34:01,718 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:34:01] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:34:04,892 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:34:04] "OPTIONS /rank HTTP/1.1" 200 -
+2024-04-14 22:34:05,301 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:34:05] "POST /rank HTTP/1.1" 200 -
+2024-04-14 22:34:05,781 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 22:34:05] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:03:52,995 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-14 23:03:52,996 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-14 23:03:53,000 - werkzeug - INFO -  * Restarting with stat
+2024-04-14 23:03:58,647 - werkzeug - WARNING -  * Debugger is active!
+2024-04-14 23:03:58,660 - werkzeug - INFO -  * Debugger PIN: 207-451-050
+2024-04-14 23:03:59,571 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:03:59] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:06,193 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:06] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:11,213 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:11] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:20,747 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:20] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:30,252 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:30] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:35,458 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:35] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:41,528 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:41] "POST /rank HTTP/1.1" 200 -
+2024-04-14 23:04:48,660 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:48] "POST /rank HTTP/1.1" 200 -

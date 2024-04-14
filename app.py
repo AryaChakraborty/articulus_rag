@@ -67,7 +67,7 @@ def rank_endpoint():
                                           documents=documents,
                                           users=users, 
                                           search_filter=True)
-        ranked_list = [{'title': doc[0], 'user': doc[1], 'slug': doc[2]} for doc in ranked_documents]
+        ranked_list = [{'title': doc[0], 'user': doc[1], 'slug': doc[2], 'image': doc[3]} for doc in ranked_documents]
         return jsonify({"ranked_documents": ranked_list})
     except Exception as e:
         logging.error(f"Error in /rank endpoint: {e}")

@@ -42,8 +42,8 @@ def rank_documents(search_keywords, documents, users, search_filter=True):
         ranking_factor = similarity + nirf_factor + location_factor
         
         # Append document with ranking factor to the ranked documents list
-        ranked_documents.append((doc['title'], doc['user'], doc['slug'], ranking_factor))
+        ranked_documents.append((doc['title'], doc['user'], doc['slug'], doc["image_url"], ranking_factor))
     
     # Sort documents by ranking factor in descending order
-    ranked_documents.sort(key=lambda x: x[3], reverse=True)
+    ranked_documents.sort(key=lambda x: x[4], reverse=True)
     return ranked_documents
