@@ -19,8 +19,8 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # connect to the mongodb database
 client = pym.MongoClient(MONGO_URL)
-db = client["rebase"]
-blog_collection = db["blogs"]
+db = client["newsgpt"]
+blog_collection = db["articles"]
 
 # define the app
 app = Flask(__name__)
@@ -64,7 +64,7 @@ def yake_endpoint():
     '''
     try:
         data = request.json
-        text = data.get('text')
+        text = data.get('body')
         keywords = keyword_from_search_sentence(text)
         return jsonify({"keywords": keywords})
     except Exception as e:
