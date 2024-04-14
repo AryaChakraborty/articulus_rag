@@ -36,6 +36,13 @@ Install all the packages within the virtual environment.
 pip install -r requirements.txt
 ```
 
+<!-- create a logs directory to store logs -->
+**Developers Note** : Create a logs directory to store logs
+
+```bash
+mkdir logs
+```
+
 ### API Documentation
 
 #### /recommend Endpoint
@@ -69,7 +76,7 @@ pip install -r requirements.txt
 - **Request Body Example:**
   ```json
   {
-    "text": "Input text for keyword extraction."
+    "body": "Input text for keyword extraction."
   }
   ```
 - **Response:**
