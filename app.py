@@ -46,7 +46,7 @@ def recommend_endpoint():
                                           documents=documents,
                                           users=users, 
                                           search_filter=False)
-        ranked_list = [{'article title': doc[0], 'article user': doc[1], 'article slug': doc[2]} for doc in ranked_documents]
+        ranked_list = [{'title': doc[0], 'user': doc[1], 'slug': doc[2]} for doc in ranked_documents]
         return jsonify({"ranked_documents": ranked_list})
     except Exception as e:
         logging.error(f"Error in /recommend endpoint: {e}")
@@ -67,7 +67,7 @@ def rank_endpoint():
                                           documents=documents,
                                           users=users, 
                                           search_filter=True)
-        ranked_list = [{'article title': doc[0], 'article user': doc[1], 'article slug': doc[2]} for doc in ranked_documents]
+        ranked_list = [{'title': doc[0], 'user': doc[1], 'slug': doc[2]} for doc in ranked_documents]
         return jsonify({"ranked_documents": ranked_list})
     except Exception as e:
         logging.error(f"Error in /rank endpoint: {e}")
