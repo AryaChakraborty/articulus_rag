@@ -102,14 +102,6 @@ mkdir logs
   - Success: Returns a JSON object containing the response from the enterprise RAG model.
   - Error: Returns a JSON object with an error message.
 
-##### Output
-
-```bash
-{
-  "response": "The blog is talking about a software that lets you play Counter-Strike using a guitar. The software is built using Python Object-Oriented Programming (OOP) and PyQt5 and PySide for the desktop application. It uses audio processing to map guitar notes to in-game actions. The blog also includes some practical applications and creative possibilities for the software."
-}
-```
-
 ## Acknowledgements
 
 * [HuggingFace](https://github.com/huggingface)
