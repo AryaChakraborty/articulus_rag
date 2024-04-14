@@ -7,7 +7,7 @@ def calculate_similarity(search_keywords, yake_list):
     similarity_score = len(intersection) / len(union)
     return similarity_score
 
-def rank_documents(search_keywords, documents):
+def rank_documents(search_keywords, documents, search_filter=False):
     '''
     doc format should be as follows:
     doc = {
@@ -33,7 +33,10 @@ def rank_documents(search_keywords, documents):
     
     for doc in documents:
         # Calculate similarity between search keywords and yake list
-        similarity_score = calculate_similarity(search_keywords, doc['yake_list'])
+        if search_filter == True:
+            similarity_score = calculate_similarity(search_keywords, doc['yake_list'])
+        else:
+            similarity_score = 1
         
         # Calculate location-based weight
         location_weight = total_entries / location_frequency[doc['location']]
@@ -76,4 +79,4 @@ def rank_documents(search_keywords, documents):
 #         'yake_list': ['programming', 'learning', 'tutorial']
 #     }
 # ]
-# print(rank_documents(search_keywords, documents))
+# print(rank_documents(search_keywords, documents, search_filter=True))

@@ -1,20 +1,49 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from enterprise_rag import source,retrieve,embeddings,llms,generator
-from utils import keyword_from_search_sentence
+from utils import keyword_from_search_sentence, rank_documents
 from dotenv import load_dotenv # type: ignore
+import pymongo as pym
 load_dotenv()
 import os
 
+# get all the env variables
+MONGO_URL = os.getenv("MONGO_URL")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+# connect to the mongodb database
+client = pym.MongoClient(MONGO_URL)
+db = client["rebase"]
+blog_collection = db["blogs"]
+
+# define the app
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/recommend', methods=['POST'])
+@app.route('/recommend', methods=['GET'])
 def recommend_endpoint():
-    pass
+    '''
+    calls the rank_documents function with the search keywords as an empty list and the documents and returns the ranked documents.
+    '''
+    # identifiers for the database and the collection
+    documents = list(blog_collection.find({}))
+    search_keywords = []
+    ranked_documents = rank_documents(search_keywords, documents, search_filter=False)
+    return jsonify({"ranked_documents": ranked_documents})
 
 @app.route('/rank', methods=['POST'])
 def rank_endpoint():
+    '''
+    calls the rank_documents function with the search keywords from the data and the documents and returns the ranked documents.
+    '''
+    data = request.json
+    documents = list(blog_collection.find({}))
+    search_keywords = data.get('search_keywords')
+    # displaying all documents while sorting based on the search keywords.
+    ranked_documents = rank_documents(search_keywords, documents, search_filter=True)
+    return jsonify({"ranked_documents": ranked_documents})
+    # gets all the documents from the database using pymongo
+
     pass
 
 @app.route('/keyword_extractor', methods=['POST'])
@@ -44,7 +73,7 @@ def ai_endpoint():
     retriever = retrieve.auto_retriever(data,embed_model,type="normal",top_k=4)
 
     llm = llms.GeminiModel(model_name="gemini-pro",
-                           google_api_key = os.getenv("GOOGLE_API_KEY"))
+                           google_api_key = GOOGLE_API_KEY)
 
     pipeline = generator.Generate(question=question,
                                   retriever=retriever,
