@@ -1,6 +1,6 @@
 <div align="center">
-<h1 align="center">Enterprise-RAG</h1>
-<h2 align="center">Build - Quick Experiment - Evaluate - Repeat</h2>
+<h1 align="center">Articulus-RAG</h1>
+<h2 align="center">Develop - Prototype - Assess - Iterate</h2>
 
 <a href="https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10-3776AB.svg?style=flat&logo=python&logoColor=white"><img src="https://img.shields.io/badge/Python-3.11-3776AB.svg?style=flat&logo=python&logoColor=white" alt="Python Versions"></a>
 <a href="https://twitter.com/ChakrabortyAry1"><img src="https://img.shields.io/twitter/follow/Arya" alt="Twitter" /></a>
