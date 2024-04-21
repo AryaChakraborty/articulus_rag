@@ -164,3 +164,30 @@
 2024-04-14 23:04:35,458 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:35] "POST /rank HTTP/1.1" 200 -
 2024-04-14 23:04:41,528 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:41] "POST /rank HTTP/1.1" 200 -
 2024-04-14 23:04:48,660 - werkzeug - INFO - 127.0.0.1 - - [14/Apr/2024 23:04:48] "POST /rank HTTP/1.1" 200 -
+2024-04-20 21:36:20,830 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:36:20,830 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:36:20,831 - werkzeug - INFO -  * Restarting with stat
+2024-04-20 21:36:23,937 - werkzeug - WARNING -  * Debugger is active!
+2024-04-20 21:36:23,953 - werkzeug - INFO -  * Debugger PIN: 539-600-576
+2024-04-20 21:36:31,737 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-04-20 21:36:37,738 - sentence_transformers.SentenceTransformer - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2024-04-20 21:36:37,741 - root - ERROR - Error in /ai endpoint: GOOGLE_API_KEY is not provided and not found in environment variables.
+2024-04-20 21:36:37,762 - werkzeug - INFO - 127.0.0.1 - - [20/Apr/2024 21:36:37] "POST /ai HTTP/1.1" 200 -
+2024-04-20 21:39:31,600 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-04-20 21:39:34,362 - sentence_transformers.SentenceTransformer - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2024-04-20 21:39:34,363 - root - ERROR - Error in /ai endpoint: GOOGLE_API_KEY is not provided and not found in environment variables.
+2024-04-20 21:39:34,372 - werkzeug - INFO - 127.0.0.1 - - [20/Apr/2024 21:39:34] "POST /ai HTTP/1.1" 200 -
+2024-04-20 21:39:37,502 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-04-20 21:39:40,920 - sentence_transformers.SentenceTransformer - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2024-04-20 21:39:40,921 - root - ERROR - Error in /ai endpoint: GOOGLE_API_KEY is not provided and not found in environment variables.
+2024-04-20 21:39:40,928 - werkzeug - INFO - 127.0.0.1 - - [20/Apr/2024 21:39:40] "POST /ai HTTP/1.1" 200 -
+2024-04-20 21:40:14,251 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-20 21:40:14,251 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-04-20 21:40:14,252 - werkzeug - INFO -  * Restarting with stat
+2024-04-20 21:40:17,223 - werkzeug - WARNING -  * Debugger is active!
+2024-04-20 21:40:17,239 - werkzeug - INFO -  * Debugger PIN: 539-600-576
+2024-04-20 21:40:19,816 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-04-20 21:40:24,179 - sentence_transformers.SentenceTransformer - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2024-04-20 21:40:29,841 - werkzeug - INFO - 127.0.0.1 - - [20/Apr/2024 21:40:29] "POST /ai HTTP/1.1" 200 -

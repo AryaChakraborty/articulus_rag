@@ -1,7 +1,10 @@
 import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from enterprise_rag import source,retrieve,embeddings,llms,generator
+from beyondllm import source,retrieve,generator
+from utils.mapping import url_map
+from beyondllm.llms import GeminiModel
+from beyondllm.embeddings import HuggingFaceEmbeddings
 from utils.keywordExtractor import keyword_from_search_sentence
 from utils.rankBlogs import rank_documents
 from dotenv import load_dotenv # type: ignore
@@ -94,25 +97,29 @@ def ai_endpoint():
     '''
     try:
         data_post = request.json
-        path = data_post.get('path') # https://highonbugs.sbk2k1.in/sows
+        path = url_map[data_post.get('path')] # https://highonbugs.sbk2k1.in/sows
+        # print(path)
         dtype = data_post.get('type') # "url", "youtube", etc.
         question = data_post.get('question') # What is the best way to learn python?
 
         data = source.fit(path=path,
-                        dtype=dtype,
-                        chunk_size=1024,
-                        chunk_overlap=0)
+                          dtype=dtype,
+                          chunk_size=1024)
+        embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-        embed_model = embeddings.HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        retriever = retrieve.auto_retriever(data=data,
+                                            embed_model=embed_model,
+                                            type="normal",
+                                            top_k=3)
 
-        retriever = retrieve.auto_retriever(data,embed_model,type="normal",top_k=4)
+        llm = GeminiModel(model_name="gemini-pro",
+                          google_api_key = GOOGLE_API_KEY)
 
-        llm = llms.GeminiModel(model_name="gemini-pro",
-                            google_api_key = GOOGLE_API_KEY)
-
-        pipeline = generator.Generate(question=question,
-                                    retriever=retriever,
-                                    llm=llm)
+        pipeline = generator.Generate(
+                 question=question,
+                 system_prompt = "you are a smart AI chatbot, answer the question asked by the user",
+                 llm = llm,
+                 retriever=retriever)
         
         response = pipeline.call()
 
