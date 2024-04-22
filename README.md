@@ -15,7 +15,7 @@
 To install Articulus RAG i.e., a private repo, we can use Access Token of GitHub. 
 
 ```bash
-git clone https://<UPDATE-WITH-YOUR-TOKEN>@https://github.com/AryaChakraborty/rebase_ml
+git clone https://<UPDATE-WITH-YOUR-TOKEN>@https://github.com/AryaChakraborty/articulus_rag
 ```
 
 Create virtual environment
@@ -36,11 +36,10 @@ Install all the packages within the virtual environment.
 pip install -r requirements.txt
 ```
 
-<!-- create a logs directory to store logs -->
-**Developers Note** : Create a logs directory to store logs
+Install the beyondllm framework. 
 
 ```bash
-mkdir logs
+pip install -e .
 ```
 
 ### API Documentation
