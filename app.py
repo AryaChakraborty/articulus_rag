@@ -105,7 +105,7 @@ def ai_endpoint():
         data = source.fit(path=path,
                           dtype=dtype,
                           chunk_size=1024)
-        embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        embed_model = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
         retriever = retrieve.auto_retriever(data=data,
                                             embed_model=embed_model,
