@@ -12,7 +12,7 @@
 
 ## Quick install
 
-To install Articulus RAG i.e., a private repo, we can use Access Token of GitHub. 
+To install Articulus RAG i.e., a private repo, we can use the Access Token of GitHub. 
 
 ```bash
 git clone https://<UPDATE-WITH-YOUR-TOKEN>@https://github.com/AryaChakraborty/articulus_rag
