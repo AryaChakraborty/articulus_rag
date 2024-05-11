@@ -43,10 +43,9 @@ class GeminiModel:
             raise ImportError("Google Generative AI library is not installed. Please install it with ``pip install google-generativeai``.")
         
         try:
-            VALID_MODEL_SUPPORT = ["gemini-1.0-pro","gemini-pro",""]
+            VALID_MODEL_SUPPORT = ["gemini-1.0-pro","gemini-pro",'gemini-1.5-pro-latest']
             if self.model_name not in VALID_MODEL_SUPPORT:
-                raise "Model not supported. Currently we only support `gemini-pro` and `gemini-1.0-pro`"
-            
+                raise f"Model not supported. Currently we only support: {','.join(VALID_MODEL_SUPPORT)}."
             
             genai.configure(api_key = self.google_api_key)
             self.client = genai.GenerativeModel(model_name=self.model_name,
