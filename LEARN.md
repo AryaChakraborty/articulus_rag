@@ -82,7 +82,7 @@ pip install -e .
   {
     "path": "https://highonbugs.sbk2k1.in/sows",
     "type": "url",
-    "question": "What is the blog talking about?"
+    "question": "What is the blog about?"
   }
   ```
 - **Response:**
