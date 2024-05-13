@@ -1,8 +1,0 @@
-2024-05-13 14:28:58,024 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-05-13 14:28:58,025 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2024-05-13 14:28:58,027 - werkzeug - INFO -  * Restarting with stat
-2024-05-13 14:29:01,051 - werkzeug - WARNING -  * Debugger is active!
-2024-05-13 14:29:01,064 - werkzeug - INFO -  * Debugger PIN: 269-356-165
-2024-05-13 14:29:18,783 - werkzeug - INFO - 127.0.0.1 - - [13/May/2024 14:29:18] "GET / HTTP/1.1" 200 -
-2024-05-13 14:29:18,909 - werkzeug - INFO - 127.0.0.1 - - [13/May/2024 14:29:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
