@@ -98,7 +98,7 @@ if google_api_key:
         llm = GeminiModel(model_name="gemini-pro",
                           google_api_key = os.environ.get('GOOGLE_API_KEY'))
         # Initialize the system prompt
-        system_prompt = "You are an AI assistant, who answers questions based on uploaded csv files. You can answer anything about the data."
+        system_prompt = "You are an AI assistant, who answers questions based on uploaded files. You can answer anything about the data."
         # Initialize the generator
         pipeline = generator.Generate(question=question,
                                       retriever=retriever, 
