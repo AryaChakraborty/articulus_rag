@@ -53,13 +53,23 @@ $ cd articulus_rag
 
 Next, use `pip` to install the project' dependencies
 ```
-$ pip install requirements.txt
+$ pip install -r requirements.txt
+```
+
+**Developers Note :** Install the source code as a package in editable format
+```
+$ pip install -e .
 ```
 
 ### Run the project
 
 ```
-$ python app.py -mode
+$ python app.py
+```
+
+### Run the streamlit app
+```
+streamlit run <path-to-the-streamlit-app>
 ```
 
 ## Submit a Pull Request
@@ -110,16 +120,11 @@ $ git push origin master
 2. Select the option to **compare across forks**
 3. Select **your username** in the `head fork` option
 4. Select **your username** in the `base` option<sup>*</sup>
-4. Click **Create Pull Request**
+5. Click **Create Pull Request**
 
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck (using issues or creating a new discussion):
 
-## **Issue Report Process 📌**
 
-1. Go to the project's issues.
-2. Give proper description for the issues.
-3. Don't spam to get the assignment of the issue 😀.
-4. Wait for till someone is looking into it !.
-5. Start working on issue only after you got assigned that issue 🚀.
+Start working on issue only after you got assigned that issue, and let the code owner put the special tags in case it is an open-source event 🚀.
 
-# **Thank you for contributing💗** 
+## **Thank you for contributing**
