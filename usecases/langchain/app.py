@@ -176,6 +176,8 @@ option = st.sidebar.selectbox("Select Task",
 
 # Display the corresponding interface based on the selected option
 if option == "Ask PDF":
+    st.image("usecases/langchain/assets/logo_2.png", width=100)
     ask_pdf()
 else:
+    st.image("usecases/langchain/assets/logo_1.png", width=100)
     generate()
