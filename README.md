@@ -30,24 +30,45 @@
 <a href="https://twitter.com/sbk_2k1"><img src="https://img.shields.io/twitter/follow/Saptarshi" alt="Twitter" /></a>
 </div>
 
-<h3>Project Overview</h3>
+<h3>🌍Project Overview</h3>
 
 <p>A platform for empowering transparency in media leverages AI-driven chatbots and content from journalism students to provide credible insights on global affairs, addressing gaps in Indian journalism. Inspired by my struggle to find concise information on India's stance on the Russia-Ukraine conflict during an interview preparation, and concerns about biased media coverage in regions like Manipur and Ladakh, the project aims to promote factual reporting and informed discourse. By offering accurate responses to complex queries and fostering a culture of fact-based reporting, it seeks to mitigate the prevalence of biased or incomplete information in Indian media, promoting transparency, accountability, and knowledge dissemination in the digital age.</p>
 
-</div>
-<h4>Acknowledgements</h4>
+<h3>✨ Features</h3>
+ - 📰 AI-Driven Chatbots: Get accurate, AI-generated responses to your complex queries.
+ - 🎓 Student Contributions: Involve journalism students in content creation for a fresh perspective.
+ - 🗺️ Global Insights: Access reliable information on global affairs with ease.
+ - 📈 Transparency Promotion: Encourage a culture of factual reporting and reduce biased media coverage.
+ - 🔍 Concise Information: Quickly find summarized information on critical issues.
+ - 📊 Real-Time Updates: Stay informed with the latest news and insights.
 
+</div>
+<h3>🌟Acknowledgements</h3>
 * [HuggingFace](https://github.com/huggingface)
 * [LlamaIndex](https://github.com/jerryjliu/llama_index)
 * [Google Gemini](https://ai.google.dev/)
 * [AI Planet](https://aiplanet.com/)
 
-and the entire OpenSource community.
+  and the entire OpenSource community.
 <div>
 
-<h2 align = "center">Our Contributors</h2>
+<h2 align = "center">Our Contributors❤️</h2>
 <div align = "center">
  <h3>Thank you for contributing to our repository</h3>
+
+ Show some support by starring this awesome repository!
+</div>
+
+<h3>🤝 Contributing</h3>
+We welcome contributions to Articulus-RAG! Please refer to our Contributing Guidelines for detailed information on how you can get involved.
+
+<h3>💬 Message From The Team</h3>
+Welcome to Articulus-RAG!
+
+We're thrilled to have you here and excited for you to explore our project. Whether you're checking out the code, contributing to the project, or providing feedback, your presence and input are invaluable.
+
+Feel free to dive in, get involved, and make Articulus-RAG even better!
+
 
 ![Contributors](https://contrib.rocks/image?repo=Anishkagupta04/RAPIDOC-HEALTHCARE-WEBSITE-)
 
