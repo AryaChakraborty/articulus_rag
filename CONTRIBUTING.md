@@ -23,7 +23,7 @@ There are five steps to building this project:
 1. [Run the project](#run-the-project)
 
 
-### Set up Git and Install dependeny
+### Set up Git and Install dependency
 
 https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
 

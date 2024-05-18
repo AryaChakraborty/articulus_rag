@@ -50,7 +50,7 @@ class AzureOpenAIModel:
             response = self.client.chat.completions.create(
                 model = self.model,
                 messages=[
-                    {"role": "system", "content": "You are an AI assitant that is using Azure OpenAI library. You are a GPT-4 Large Language model that is the backbone that helps with user prompts."},
+                    {"role": "system", "content": "You are an AI assistant that is using Azure OpenAI library. You are a GPT-4 Large Language model that is the backbone that helps with user prompts."},
                     {"role": "user", "content": prompt}
                 ],
             **self.model_kwargs

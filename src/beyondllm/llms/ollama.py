@@ -36,7 +36,7 @@ class OllamaModel:
                 messages=[
                 {
                     'role': 'system',
-                    'content': f"You are an AI assitant that is using Ollama library. You are a {self.model} Large Language model that is the backbone that helps with user prompts."
+                    'content': f"You are an AI assistant that is using Ollama library. You are a {self.model} Large Language model that is the backbone that helps with user prompts."
                 },
                 {
                     'role': 'user',
