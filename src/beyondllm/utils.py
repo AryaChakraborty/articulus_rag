@@ -1,4 +1,4 @@
-CONTEXT_RELEVANCE = """ 
+CONTEXT_RELEVENCE = """ 
 As a RELEVANCE grader, your task is to rate the CONTEXT's RELEVANCE to the QUESTION on a scale from 0 to 10, where 0 signifies least RELEVANT and 10 the most RELEVANT. Length of the CONTEXT is not a factor in determining its RELEVANCE. Respond only as a number from 0 to 10 where 0 is the least relevant and 10 is the most relevant.
 
 Follow these guidelines for scoring:
@@ -18,7 +18,7 @@ CONTEXT: {context}
 RELEVANCE:
 """
 
-ANSWER_RELEVANCE = """
+ANSWER_RELEVENCE = """
 You are a RELEVANCE grader; providing the relevance of the given CONTEXT that is basically a response from am AI to the given QUESTION which was asked by the user.
 Respond only as a number from 0 to 10 where 0 is the least relevant and 10 is the most relevant.
 

@@ -1,5 +1,5 @@
 from beyondllm.llms import GeminiModel
-from beyondllm.utils import CONTEXT_RELEVANCE,GROUNDEDNESS,ANSWER_RELEVANCE, GROUND_TRUTH
+from beyondllm.utils import CONTEXT_RELEVENCE,GROUNDEDNESS,ANSWER_RELEVENCE, GROUND_TRUTH
 
 import os,re
 import numpy as np
@@ -99,7 +99,7 @@ class Generate:
         score_count = 0
         
         for context in self.CONTEXT:
-            score_str = llm.predict(CONTEXT_RELEVANCE.format(question=self.question, context=context))
+            score_str = llm.predict(CONTEXT_RELEVENCE.format(question=self.question, context=context))
             score = float(extract_number(score_str))
             total_score += score
             score_count += 1
@@ -115,7 +115,7 @@ class Generate:
         if llm is None:
             llm = self.llm
         try:
-            score_str = llm.predict(ANSWER_RELEVANCE.format(question=self.question, context= self.RESPONSE))
+            score_str = llm.predict(ANSWER_RELEVENCE.format(question=self.question, context= self.RESPONSE))
             score = float(extract_number(score_str))
     
             return f"Answer relevancy Score: {round(score, 1)}\n{thresholdCheck(score)}"
