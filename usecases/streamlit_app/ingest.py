@@ -1,4 +1,5 @@
 import os
+import shutil
 from beyondllm.retrieve import auto_retriever
 from beyondllm.vectordb import ChromaVectorDb, PineconeVectorDb
 from beyondllm.embeddings import GeminiEmbeddings
@@ -13,17 +14,27 @@ def get_retriever(uploaded_file,
                   pinecone_embedding_dim=None, 
                   pinecone_metric=None, 
                   pinecone_cloud=None, 
-                  pinecone_region=None, 
+                  pinecone_region=None,
+                  grCond = False,
                   file_type=None):
     
     if google_api_key:
-        # Save the uploaded file
         save_path = "./uploaded_files" # change this to your desired path or leave it as is
-        if not os.path.exists(save_path):
-            os.makedirs(save_path)
-        file_path = os.path.join(save_path, uploaded_file.name)
-        with open(file_path, "wb") as f:
-            f.write(uploaded_file.getbuffer())
+        if grCond:
+            # setting the file path
+            file_path = f"{save_path}/{uploaded_file}" 
+
+        else:
+        # Save the uploaded file
+            
+            if not os.path.exists(save_path):
+                os.makedirs(save_path)
+            file_path = os.path.join(save_path, uploaded_file.name)
+            
+            with open(file_path, "wb") as f:
+
+                f.write(uploaded_file.getbuffer())
+            
 
         # Fit the data
         data = source.fit(file_path, dtype=file_type, 
