@@ -20,9 +20,9 @@ The `app.py` file contains the main application logic for gradio that allows use
 ## Usage
 
 1. Make sure you've installed pre-requisites from `pip install -r requirements.txt`
-1. Run the Python script: `gradio app.py`
+1. Run the Python script: `gradio usecases/gradio_app/app.py` (replace it with the path of your app.py file where the primary logic is written)
 2. The Gradio application will open in your default web browser at `http://127.0.0.1/7860`.
-3. Enter the required information (Google API Key, Vector Database Type, File Type) and upload a file.
+3. Enter the required information (Google API Key, Vector Database Type, File Type) and upload a file. Get your API key from here: https://ai.google.dev/
 4. If you selected Pinecone, provide the additional Pinecone-specific details.
 5. Enter your question and click the "Submit" button.
 6. The application will process the query and display the answer in the designated text box.
