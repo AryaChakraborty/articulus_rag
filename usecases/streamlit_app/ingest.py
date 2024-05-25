@@ -1,4 +1,5 @@
 import os
+import shutil
 from beyondllm.retrieve import auto_retriever
 from beyondllm.vectordb import ChromaVectorDb, PineconeVectorDb
 from beyondllm.embeddings import GeminiEmbeddings
@@ -15,7 +16,8 @@ def get_retriever(uploaded_file=None, url=None,
                   pinecone_embedding_dim=None, 
                   pinecone_metric=None, 
                   pinecone_cloud=None, 
-                  pinecone_region=None, 
+                  pinecone_region=None,
+                  grCond = False,
                   file_type=None):
     
     if google_api_key:
