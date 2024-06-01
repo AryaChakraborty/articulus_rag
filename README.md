@@ -45,12 +45,24 @@
 and the entire OpenSource community.
 <div>
 
-<h2 align = "center">Our Contributors</h2>
-<div align = "center">
- <h3>Thank you for contributing to our repository</h3>
+#### Contibuting Guidelines 
+  We believe in the power of collaboration. If you have ideas to improve Consat-Ground-Station , feel free to contribute! Check out our [Contribution Guidelines]https://github.com/AryaChakraborty/articulus_rag/blob/main/CONTRIBUTING.md to get started.
 
-![Contributors](https://contrib.rocks/image?repo=Anishkagupta04/RAPIDOC-HEALTHCARE-WEBSITE-)
+### 📄Documentation
+Explore our comprehensive documentation in the [LEARN.md]https://github.com/AryaChakraborty/articulus_rag/blob/main/Learn.mdfile, which serves as a detailed guide to understanding and contributing to Consat-Ground-Station. This document covers various aspects of the project, including setup instructions, architecture overview, and contribution guidelines. We recommend referring to this documentation to gain a deeper insight into UniCollab and make meaningful contributions to its development.
 
-### Show some support by starring this awesome repository!
+
+<div align="center">
+  <h2>Our Contributors ❤️</h2>
+  <h3>Thank you for contributing to our repository</h3>
+
+<a href="https://github.com/AryaChakraborty/articulus_rag/graphs/contributors">
+<!-- it links to the "contributors" page of the articulus_rag- repository. This page shows a graph of contributors and their contributions to the repository. -->
+<img src="https://contributors-img.web.app/image?repo=AryaChakraborty/articulus_rag" />
+<!-- This takes a repository name as a query parameter (?repo=articulus_rag/AryaChakraborty-) and returns an image representing the contributors to that repository. -->
+
+  </a>
+
+### Show some ❤️ by starring this awesome repository!
 
 </div>
