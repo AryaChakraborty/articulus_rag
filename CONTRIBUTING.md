@@ -12,7 +12,7 @@ We use [GitHub Issues](https://github.com/AryaChakraborty/articulus_rag/issues) 
 
 ## Build the project locally
 
-In order to contribute to a project on GitHub, you must first get a copy of the project running locally on your computer. This process is sometimes called a "build process", and every project's process will have different requirements. Some requirements are due to the project being hosted on GitHub, some are due to the programming language used, some are due to the project's dependencies.
+In order to contribute to a project on GitHub, you must first get a copy of the project running locally on your computer. This process is sometimes called a "build process", and every project's process will have different requirements. Some requirements are due to the project being hosted on GitHub, some are due to the programming language used, and some are due to the project's dependencies.
 
 There are five steps to building this project:
 
@@ -23,13 +23,13 @@ There are five steps to building this project:
 1. [Run the project](#run-the-project)
 
 
-### Set up Git and Install dependeny
+### Set up Git and Install dependency
 
 https://docs.github.com/en/get-started/getting-started-with-git/set-up-git
 
 ### Fork the repository
 
-A *fork* is a copy of a repository. Forking a repository lets you to make changes to your copy without affecting any of the original code.
+A *fork* is a copy of a repository. Forking a repository lets you make changes to your copy without affecting any of the original code.
 
 Click **Fork** (in the top-right corner of the page) to copy this repository to your GitHub account.
 
@@ -45,18 +45,18 @@ $ git clone https://github.com/YOUR-USERNAME/articulus_rag
 
 ### Install dependencies
 
-First, navigate into the project's directory
+First, navigate to the project's directory
 
 ```
 $ cd articulus_rag
 ```
 
-Next, use `pip` to install the project' dependencies
+Next, use `pip` to install the project's dependencies
 ```
 $ pip install -r requirements.txt
 ```
 
-**Developers Note :** Install the source code as a package in editable format
+**Developers Note:** Install the source code as a package in editable format
 ```
 $ pip install -e .
 ```
@@ -67,7 +67,7 @@ $ pip install -e .
 $ python app.py
 ```
 
-### Run the streamlit app
+### Run the Streamlit app
 ```
 streamlit run <path-to-the-streamlit-app>
 ```
@@ -94,7 +94,7 @@ Next, *stage* the file you want to save. This will add the file to a new list th
 $ git add .
 ```
 
-Next, verify that the file has been staged correctly. Notice that the text color has changed, and your file is now in a list that says "Changes to be committed" instead of "Changes not staged for commit"
+Next, verify that the file has been staged correctly. Notice that the text colour has changed, and your file is now in a list that says "Changes to be committed" instead of "Changes not staged for commit"
 ```
 $ git status
 ```
@@ -153,7 +153,7 @@ $ git push origin master
 4. Select **your username** in the `base` option<sup>*</sup>
 5. Click **Create Pull Request**
 
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck (using issues or creating a new discussion):
+You can refer to the following articles on basics of Git and GitHub and also contact the Project Mentors, in case you are stuck (using issues or creating a new discussion):
 
 
 Start working on issue only after you got assigned that issue, and let the code owner put the special tags in case it is an open-source event 🚀.
