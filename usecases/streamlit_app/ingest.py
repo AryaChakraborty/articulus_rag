@@ -19,9 +19,9 @@ def get_retriever(uploaded_file,
                   file_type=None):
     
     if google_api_key:
-        save_path = "./uploaded_files" # change this to your desired path or leave it as is
+        save_path = "./uploaded_files" # Change this to your desired path or leave it as is
         if grCond:
-            # setting the file path
+            # Setting the file path
             file_path = f"{save_path}/{uploaded_file}" 
 
         else:
