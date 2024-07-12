@@ -12,7 +12,7 @@ data = fit("https://www.youtube.com/watch?v=oJJyTztI_6g",dtype="youtube",chunk_s
 
 ### Embeddings
 
-BeyondLLM leverages embeddings from beyondllm.embeddings to transform text into numerical representations, enabling similarity search and retrieval of relevant information. BeyondLLM provides different embedding options including Gemini, Hugging Face, OpenAI, Qdrant Fast, and Azure AI embeddings, allowing the users to select models based on preferences for efficient text representation. Here, we are using the Gemmini embeddings.
+BeyondLLM leverages embeddings from beyondllm.embeddings to transform the text into numerical representations, enabling similarity search and retrieval of relevant information. BeyondLLM provides different embedding options including Gemini, Hugging Face, OpenAI, Qdrant Fast, and Azure AI embeddings, allowing the users to select models based on preferences for efficient text representation. Here, we are using the Gemmini embeddings.
 
 ```python
 from beyondllm.embeddings import GeminiEmbeddings
