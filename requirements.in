@@ -11,6 +11,7 @@ bcrypt==4.1.3
 beautifulsoup4==4.12.3
 beyondllm
 blinker==1.8.2
+bleach==6.1.0
 build==1.2.1
 cachetools==5.3.3
 certifi==2024.2.2
