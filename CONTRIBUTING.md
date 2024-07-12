@@ -132,7 +132,7 @@ $ git push origin master
 
 5. **Commit Changes:**
    - In GitHub Desktop, you'll see a list of the files you've changed. Check the box next to each file you want to include in the commit.
-   - Enter a summary and description for your changes in the "Summary" and "Description" fields, respectively. Click the "Commit to <branch-name>" button to commit your changes to the local branch.
+   - Enter a summary and description for your changes in the "Summary" and "Description" fields. Click the "Commit to <branch-name>" button to commit your changes to the local branch.
 
 6. **Push Changes to GitHub:**
    After committing your changes, click the "Push origin" button in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
@@ -153,9 +153,9 @@ $ git push origin master
 4. Select **your username** in the `base` option<sup>*</sup>
 5. Click **Create Pull Request**
 
-You can refer to the following articles on basics of Git and GitHub and also contact the Project Mentors, in case you are stuck (using issues or creating a new discussion):
+You can refer to the following articles on the basics of Git and GitHub and also contact the Project Mentors, in case you are stuck (using issues or creating a new discussion):
 
 
-Start working on issue only after you got assigned that issue, and let the code owner put the special tags in case it is an open-source event 🚀.
+Start working on an issue only after you have been assigned that issue, and let the code owner put the special tags in case it is an open-source event 🚀.
 
 ## **Thank you for contributing**
