@@ -20,7 +20,7 @@ from langchain_core.runnables import RunnablePassthrough
 try:
     import streamlit as st
 except ImportError:
-    user_agree = input("The feature you're trying to use requires an additional library(s):streamlit. Would you like to install it now? [y/N]: ")
+    user_agree = input("The feature you're trying to use requires an additional library(s): 'Streamlit'. Would you like to install it now? [y/N]: ")
     if user_agree.lower() == 'y':
         subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit"])
         import streamlit as st
@@ -28,7 +28,7 @@ except ImportError:
         raise ImportError("The required 'streamlit' is not installed.")
 
 def ask_pdf():
-    # RAG pipeline with PDF as data source 
+    # RAG pipeline with PDF as a data source 
     st.title("Chat with PDF files")
 
     # HuggingfaceHub Access Token
@@ -46,7 +46,7 @@ def ask_pdf():
             query = st.text_input("Enter your question")
 
             if query is not None:
-                save_path = "./uploaded_files" # change this to your desired path or leave it as is
+                save_path = "./uploaded_files" # Change this to your desired path or leave it as is
                 if not os.path.exists(save_path):
                     os.makedirs(save_path)
                 file_path = os.path.join(save_path, uploaded_file.name)

@@ -38,7 +38,7 @@ def rank_documents(search_keywords, documents, users, search_filter=True):
         current_author_location = filtered_data_username[0]['location']
         location_factor = location_counts[current_author_location] / len(documents) *0.01
         
-        # Calculate overall ranking factor
+        # Calculate the overall ranking factor
         ranking_factor = similarity + nirf_factor + location_factor
         
         # Append document with ranking factor to the ranked documents list

@@ -2,11 +2,11 @@
 
 ### `app.py`
 
-The `app.py` file contains the main application logic for gradio that allows users to upload files (such as CSV, PDF, DOC, or DOCX) and ask questions related to the content of those files. Here's an overview of its functionality:
+The `app.py` file contains the main application logic for Gradio that allows users to upload files (such as CSV, PDF, DOC, or DOCX) and ask questions related to the content of those files. Here's an overview of its functionality:
 
 1. **Imports:** The file starts with importing necessary libraries, including `streamlit` for building the web interface.
 
-3. **File Upload and Question Input:** The user can input their Google API Key, choose a file type, upload a file, and enter a question related to the uploaded file. `os` and  `shutil` libraries are used for saving the uploaded files on local device and updates the `upload_file_path`.
+3. **File Upload and Question Input:** The user can input their Google API Key, choose a file type, upload a file, and enter a question related to the uploaded file. `os` and  `shutil` libraries are used for saving the uploaded files on a local device and updates the `upload_file_path`.
 
 4. **Retriever Initialization:** Depending on the chosen vector database type (`Chroma` or `Pinecone`), the appropriate retriever is initialized by the `process_query()` to extract relevant information from the uploaded file.
 

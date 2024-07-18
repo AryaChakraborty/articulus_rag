@@ -11,7 +11,7 @@ assignees: ''
 A clear and concise description of what the feature will do.
 
 ### Implement features
-Look through the GitHub issues for features. Anything tagged with "enhancement" and "help wanted" is open to whoever wants to implement it.
+Look through the GitHub issues for features. Anything tagged with "enhancement" and "help wanted" is open to anybody who wants to implement it.
 
 **If you are proposing a feature:**
 - Explain in detail how it would work.
