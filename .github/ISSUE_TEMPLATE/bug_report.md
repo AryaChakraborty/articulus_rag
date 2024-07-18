@@ -12,7 +12,7 @@ A clear and concise description of what the bug is.
 
 **If you are reporting a bug, please include:**
 - Your operating system name and version.
-- Any details about your local setup that might be helpful in troubleshooting.
+- Any details about your local setup that might help troubleshoot the bug.
 - Detailed steps to reproduce the bug.
 
 ### Fix Bugs
